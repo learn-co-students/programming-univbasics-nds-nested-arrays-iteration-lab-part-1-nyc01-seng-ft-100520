@@ -10,15 +10,15 @@ In this lab, we're going to practice what we reviewed in the previous lesson -
 displaying content from an `Array` of `Array`s.
 
 We're going to give you a bit of "reference code." Reference code is code that's
-a little generic and probably doesn't solve any _real_ problem, but which is
+a little generic. It probably doesn't solve any _real_ problem, but which is
 kept intentionally ***very simple*** so that you can see how it might be adapted
 to your particular need. Some people call these "reference implementations."
 
 ## Display the Cells in an `Array` of `Array`s
 
-It's not often we say this, but this following bit of code is worth memorizing.
+It's not often we say this, but this next bit of code is worth memorizing.
 If you want to learn to speak any human language, it's a good idea to learn the
-grammar, grow your vocabulary, and speak with native speakers as much as
+grammar, grow your vocabulary and talk with native speakers as much as
 possible.
 
 **But**
@@ -73,7 +73,7 @@ Rosemary
 ```
 
 This "formula" can be expanded and changed. Maybe you want something more
-descriptive than `row_index` or `element_index` index. Or, perhaps you need to
+descriptive than `row_index` or `element_index` index. Or, perhaps, you need to
 adjust behavior slightly. That's fine! But if you're not sure how to start,
 this is always a good start and will get you un-stuck!
 
@@ -85,10 +85,10 @@ guidance in the comments there and below.
 
 ### `find_even_values`
 
-This method is already defined, but does not contain any code. It should accept an
-array of arrays as a parameter. Your task is to iterate over the AoA to access
-the elements of each nested array and print out every even number present. So, given
-the following:
+This method is already defined but does not contain any code. It should accept
+an array of arrays as a parameter. Your task is to iterate over the AoA to
+access the elements of each nested array and print out every even number
+present. So, given the following:
 
 ```rb
 array_of_arrays = [
@@ -145,10 +145,10 @@ p array_of_arrays[2][1]
 
 We can see which values are even, and go straight to printing only those. What
 if we had this exact structure (an array of three arrays, each with three
-element) but we couldn't see the values contained?
+element), but we couldn't see the values contained?
 
 We would have to check every element using a conditional statement. [Integers][]
-in Ruby have a built in methods to tell if something is even or odd - `.even?`
+in Ruby have a built-in methods to tell if something is even or odd - `.even?`
 and `.odd?`. We can use this to determine whether or not a value should be
 printed:
 
@@ -177,9 +177,9 @@ Now, regardless of the elements contained, we would be able to print out only
 the even values.
 
 This code still relies on the assumption that the array of arrays is structured
-exactly how we expect. When writing a looping solution to this, the
-implementation for deciding whether or not to print a value is going to be like
-we see above. Loops, however, abstract away the specific indices being used.
+precisely how we expect. When writing a looping solution, the implementation for
+deciding whether or not to print a value is going to be like we see above.
+Loops, however, abstract away the specific indices being used.
 
 To implement a looping solution, first, we'll start with a generic double loop:
 
