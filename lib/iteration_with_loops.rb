@@ -4,7 +4,7 @@ def find_even_values(src)
   while count < src.length do
     element = 0 
     while element < src[count].length do
-      if src[count][element] /= 2 
+      if src[count][element].even?
         p src[count][element]
       end
       element += 1 
